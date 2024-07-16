@@ -1,0 +1,157 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parent6 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("pinkman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.child1_6, .child2_6 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1_6 {
+    height: auto;
+    max-width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box11_6 {
+    text-align: center;
+}
+
+.line16 {
+    color: rgb(24, 24, 245);
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.line26 p {
+    font-size: 45px;
+    color: rgb(24, 24, 245);
+    letter-spacing: 2.5px;
+    margin: 10px 0;
+}
+
+.line36 {
+    color: rgb(166, 165, 165);
+    word-spacing: 2px;
+    margin: 10px 0;
+}
+
+.line46 button {
+    height: 30px;
+    width: 100px;
+    border: 1px solid blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer, .footer2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: blue;
+    color: white;
+}
+
+.middle_part {
+    width: 100%;
+    max-width: 500px;
+}
+
+.middle6 {
+    margin: 0 auto;
+}
+
+.followus {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.icons6 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.icons6 div:hover {
+    border-bottom: 3px solid white;
+}
+
+.footer2 {
+    background-color: black;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .parent6 {
+        flex-direction: column;
+    }
+
+    .child1_6, .child2_6 {
+        width: 100%;
+    }
+
+    .box1_6 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .line26 p {
+        font-size: 30px;
+    }
+
+    .followus {
+        font-size: 30px;
+    }
+
+    .icons6 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .line16 {
+        font-size: 16px;
+    }
+
+    .line26 p {
+        font-size: 25px;
+    }
+
+    .followus {
+        font-size: 25px;
+    }
+
+    .icons6 {
+        font-size: 16px;
+    }
+}
+```
